@@ -107,7 +107,10 @@
             Debug.WriteLine(listItem.SubItems(2).Text)
 
             Dim priceString As String = listItem.SubItems(1).Text.Replace(" €", "").Trim()
+            priceString = priceString.Replace(",", ".")
             Dim price As Decimal = Decimal.Parse(priceString, Globalization.CultureInfo.InvariantCulture)
+
+            Debug.WriteLine("Pri saveanju dobivam " & price & priceString)
 
             Dim receiptItem As New ReceiptItem With {
                 .Item = New CafeItem With {

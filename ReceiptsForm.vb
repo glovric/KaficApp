@@ -8,6 +8,11 @@ Public Class ReceiptsForm
     End Sub
 
     Private Sub CloseReceiptButton_Click(sender As Object, e As EventArgs) Handles CloseReceiptButton.Click
+        Dim deleteReceiptForm As New DeleteReceiptForm()
+        deleteReceiptForm.ShowDialog() ' This opens it as a modal popup
+    End Sub
+
+    Private Sub Old()
         Debug.WriteLine("---- Global Data: Receipts ----")
 
         ' Define the Euro-based culture (you can use any Euro-based culture here)
