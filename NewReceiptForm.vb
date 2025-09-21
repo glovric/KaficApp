@@ -9,15 +9,7 @@
         ' Create a culture info for Euro (e.g., German or Irish culture)
         Dim euroCulture As New Globalization.CultureInfo("de-DE") ' or "en-IE", "fr-FR", etc.
 
-        ' Add cafe items to the available items ListView
-        Dim items As New List(Of CafeItem) From {
-        New CafeItem With {.Name = "Espresso", .Price = 2.5D},
-        New CafeItem With {.Name = "Latte", .Price = 3D},
-        New CafeItem With {.Name = "Croissant", .Price = 2D},
-        New CafeItem With {.Name = "Tea", .Price = 1.5D}
-    }
-
-        For Each item In items
+        For Each item In GlobalData.CafeItems
             ' Format the price to Euro currency
             Dim listItem As New ListViewItem(item.Name)
             listItem.SubItems.Add(item.Price.ToString("C", euroCulture)) ' Format price in Euro

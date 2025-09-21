@@ -27,13 +27,13 @@ Partial Class DeleteReceiptForm
         ' 
         ' flpReceipts
         ' 
-        flpReceipts.Location = New Point(53, 33)
+        flpReceipts.AutoScroll = True
+        flpReceipts.FlowDirection = FlowDirection.TopDown
+        flpReceipts.Location = New Point(12, 12)
         flpReceipts.Name = "flpReceipts"
-        flpReceipts.Size = New Size(685, 383)
+        flpReceipts.Size = New Size(776, 426)
         flpReceipts.TabIndex = 1
-        flpReceipts.AutoScroll = True  ' Enables scrolling
-        flpReceipts.WrapContents = False  ' Prevents content from wrapping; keeps it horizontal
-        flpReceipts.FlowDirection = FlowDirection.TopDown ' Makes sure the receipts are stacked vertically
+        flpReceipts.WrapContents = False
         ' 
         ' DeleteReceiptForm
         ' 
