@@ -26,8 +26,9 @@ Partial Class NewReceiptForm
         SelectedCafeItems = New ListView()
         Label1 = New Label()
         Label2 = New Label()
-        lblTotal = New TextBox()
         btnAddItem = New Button()
+        lblTotal = New Label()
+        CreateNewReceiptButton = New Button()
         SuspendLayout()
         ' 
         ' lstCafeItems
@@ -64,13 +65,6 @@ Partial Class NewReceiptForm
         Label2.TabIndex = 3
         Label2.Text = "Odabrana pića"
         ' 
-        ' lblTotal
-        ' 
-        lblTotal.Location = New Point(528, 237)
-        lblTotal.Name = "lblTotal"
-        lblTotal.Size = New Size(134, 23)
-        lblTotal.TabIndex = 4
-        ' 
         ' btnAddItem
         ' 
         btnAddItem.Location = New Point(177, 229)
@@ -80,13 +74,31 @@ Partial Class NewReceiptForm
         btnAddItem.Text = "Dodaj piće"
         btnAddItem.UseVisualStyleBackColor = True
         ' 
+        ' lblTotal
+        ' 
+        lblTotal.AutoSize = True
+        lblTotal.Location = New Point(565, 237)
+        lblTotal.Name = "lblTotal"
+        lblTotal.Size = New Size(0, 15)
+        lblTotal.TabIndex = 6
+        ' 
+        ' CreateNewReceiptButton
+        ' 
+        CreateNewReceiptButton.Location = New Point(565, 340)
+        CreateNewReceiptButton.Name = "CreateNewReceiptButton"
+        CreateNewReceiptButton.Size = New Size(84, 23)
+        CreateNewReceiptButton.TabIndex = 7
+        CreateNewReceiptButton.Text = "Stvori račun"
+        CreateNewReceiptButton.UseVisualStyleBackColor = True
+        ' 
         ' NewReceiptForm
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(800, 450)
-        Controls.Add(btnAddItem)
+        Controls.Add(CreateNewReceiptButton)
         Controls.Add(lblTotal)
+        Controls.Add(btnAddItem)
         Controls.Add(Label2)
         Controls.Add(Label1)
         Controls.Add(SelectedCafeItems)
@@ -101,6 +113,7 @@ Partial Class NewReceiptForm
     Friend WithEvents SelectedCafeItems As ListView
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
-    Friend WithEvents lblTotal As TextBox
     Friend WithEvents btnAddItem As Button
+    Friend WithEvents lblTotal As Label
+    Friend WithEvents CreateNewReceiptButton As Button
 End Class

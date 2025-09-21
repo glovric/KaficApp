@@ -5,7 +5,9 @@ End Module
 Public Class Receipt
     Public Property Items As List(Of ReceiptItem)
     Public Property Total As Decimal
-    Public Property Timestamp As DateTime
+    Public Sub New()
+        Items = New List(Of ReceiptItem)()
+    End Sub
 End Class
 
 Public Class ReceiptItem
@@ -16,4 +18,9 @@ Public Class ReceiptItem
             Return Item.Price * Quantity
         End Get
     End Property
+End Class
+
+Public Class CafeItem
+    Public Property Name As String
+    Public Property Price As Decimal
 End Class
