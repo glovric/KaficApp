@@ -104,7 +104,7 @@ Partial Class NewReceiptForm
         Controls.Add(SelectedCafeItems)
         Controls.Add(lstCafeItems)
         Name = "NewReceiptForm"
-        Text = "NewReceiptForm"
+        Text = "Novi račun"
         ResumeLayout(False)
         PerformLayout()
     End Sub

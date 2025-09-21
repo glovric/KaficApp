@@ -82,7 +82,7 @@ Partial Class AddNewCafeItemForm
         Controls.Add(NewCafeItemPrice)
         Controls.Add(NewCafeItemName)
         Name = "AddNewCafeItemForm"
-        Text = "AddNewCafeItemForm"
+        Text = "Dodaj novo piće"
         CType(NewCafeItemPrice, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
         PerformLayout()

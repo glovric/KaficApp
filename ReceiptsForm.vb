@@ -17,4 +17,9 @@ Public Class ReceiptsForm
         newItemForm.ShowDialog()
     End Sub
 
+    Private Sub DeleteCafeItem_Click(sender As Object, e As EventArgs) Handles DeleteItemButton.Click
+        Dim deleteItemForm As New RemoveCafeItemForm
+        deleteItemForm.ShowDialog()
+    End Sub
+
 End Class

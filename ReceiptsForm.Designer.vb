@@ -74,7 +74,7 @@ Partial Class ReceiptsForm
         Controls.Add(CloseReceiptButton)
         Controls.Add(NewReceiptButton)
         Name = "ReceiptsForm"
-        Text = "ReceiptsForm"
+        Text = "Kafic aplikacija"
         ResumeLayout(False)
     End Sub
 

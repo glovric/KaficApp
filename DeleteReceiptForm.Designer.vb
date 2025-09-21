@@ -42,7 +42,7 @@ Partial Class DeleteReceiptForm
         ClientSize = New Size(800, 450)
         Controls.Add(flpReceipts)
         Name = "DeleteReceiptForm"
-        Text = "DeleteReceiptForm"
+        Text = "Zatvori račun"
         ResumeLayout(False)
     End Sub
 
