@@ -1,7 +1,4 @@
 ﻿Public Class MainForm
-    Private Sub Label1_Click(sender As Object, e As EventArgs) Handles MainLabel.Click
-
-    End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles LoginButton.Click
         If username.Text = "1" AndAlso password.Text = "1" Then
